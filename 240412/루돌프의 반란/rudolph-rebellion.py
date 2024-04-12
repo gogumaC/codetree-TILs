@@ -165,7 +165,7 @@ def crashSantas(r, c, num, dir):
     global out_count
 
     if not (0 <= nr < N and 0 <= nc < N):  # out
-        santa_state[num] = -1
+        santa_state[num - 1] = -1
         out_count += 1
         return
 
